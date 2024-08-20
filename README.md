@@ -1,2 +1,2 @@
 # Logic-Challenges
-Resolução de desafios de lógica e algoritmos
+- Resolução de desafios de lógica e algoritmos
