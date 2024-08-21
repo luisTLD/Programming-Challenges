@@ -1,6 +1,6 @@
 # Boolean Algebra Solver
 
-This project is a simple solver for boolean algebra expressions with AND (`and`), OR (`or`), and NOT (`not`) gates. It handles up to 26 variables (`A` to `Z`) or direct boolean values (1 and 0).
+This project is a simple solver for boolean algebra expressions with AND (`and`), OR (`or`), and NOT (`not`) gates. It handles up to 26 variables (`A` to `Z`) or direct boolean values (1 and 0)
 
 ## Features
 
@@ -11,15 +11,16 @@ This project is a simple solver for boolean algebra expressions with AND (`and`)
 
 ## Usage
 
-- The first number indicates the number of variables, `N`.
-- The next `N` numbers represent the boolean values (1 for `true`, 0 for `false`) for each variable, in order (`A` to `Z`).
-- Followed by the boolean expression.
+- The first number indicates the number of variables, `N`
+- The next `N` numbers represent the boolean values (1 for `true`, 0 for `false`) for each variable, in order (`A` to `Z`)
+- Followed by the boolean expression
+- - If the first number is `0`, the program will terminate
 
 **Important:**
 
-- **Gates** (AND, OR, NOT) **must be in lowercase** (`and` for AND, `or` for OR, `not` for NOT).
-- **Variables** must be in uppercase (`A` to `Z`).
-- The expression will not be evaluated correctly if these conventions are not followed.
+- **Gates** (AND, OR, NOT) **must be in lowercase** (`and` for AND, `or` for OR, `not` for NOT)
+- **Variables** must be in uppercase (`A` to `Z`)
+- The expression will not be evaluated correctly if these conventions are not followed
 
 ### Variables
 
@@ -32,5 +33,5 @@ This project is a simple solver for boolean algebra expressions with AND (`and`)
 
 ## Notes
 
-- The solver **does not validate** the input expressions.
-- **Only** `and`, `or`, and `not` gates are supported.
+- The solver **does not validate** the input expressions
+- **Only** `and`, `or`, and `not` gates are supported
