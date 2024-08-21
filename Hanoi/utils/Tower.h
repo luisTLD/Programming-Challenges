@@ -1,5 +1,5 @@
-#ifndef TOWER_H
-#define TOWER_H
+#ifndef TOWER_HPP
+#define TOWER_HPP
 
 #include <iostream>
 #include <limits>

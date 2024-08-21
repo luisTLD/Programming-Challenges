@@ -1,5 +1,5 @@
-#ifndef HANOI_H
-#define HANOI_H
+#ifndef HANOI_HPP
+#define HANOI_HPP
 
 #include <thread>
 #include <chrono>

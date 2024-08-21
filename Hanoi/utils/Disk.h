@@ -1,5 +1,5 @@
-#ifndef DISK_H
-#define DISK_H
+#ifndef DISK_HPP
+#define DISK_HPP
 
 class Disk
 {

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <limits>
 
-#include "Hanoi.h"
+#include "utils/Hanoi.h"
 
 int main()
 {
