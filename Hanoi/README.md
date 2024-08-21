@@ -9,3 +9,4 @@ This project implements the classic Tower of Hanoi problem using C++. The progra
 - **Tower Representation**: Each tower is represented as a stack of disks
 - **Solve Algorithm**: Recursive solution to move disks between towers
 - **User Interface**: Simple command-line interface to interact with the solution
+- **Visualization**: Moves disks one step at a time with a 1-second interval to visualize the movement
