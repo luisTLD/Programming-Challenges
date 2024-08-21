@@ -14,7 +14,7 @@ This project is a simple solver for boolean algebra expressions with AND (`and`)
 - The first number indicates the number of variables, `N`
 - The next `N` numbers represent the boolean values (1 for `true`, 0 for `false`) for each variable, in order (`A` to `Z`)
 - Followed by the boolean expression
-- - If the first number is `0`, the program will terminate
+- If the first number is `0`, the program will terminate
 
 **Important:**
 
