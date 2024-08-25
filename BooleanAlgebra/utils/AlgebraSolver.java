@@ -2,11 +2,11 @@ package utils;
 
 public class AlgebraSolver
 {
-    private Stack<Character> eval_stack;
+    private Stack eval_stack;
 
     public AlgebraSolver()
     {
-        this.eval_stack = new Stack<>();
+        this.eval_stack = new Stack();
     }
 
     // Solve the expression
@@ -33,7 +33,7 @@ public class AlgebraSolver
     // Solve a Subexpression
     private char solveSubexpression()
     {
-        Stack<Character> aux_stack = new Stack<>();
+        Stack aux_stack = new Stack();
         char c;
         while ((c = this.eval_stack.pop()) != '(')
         {

@@ -1,41 +1,41 @@
 package utils;
 
-public class Stack<T> 
+public class Stack 
 {
-    private Node<T> top;
+    private Node top;
 
     public Stack() {
         this.top = null;
     }
 
     // Push
-    public void push(T data)
+    public void push(char data)
     {
-        Node<T> new_node = new Node<>(data, this.top);
+        Node new_node = new Node(data, this.top);
         this.top = new_node;
     }
 
     // Pop
-    public T pop()
+    public char pop()
     {
         if (this.top == null)
         {
             throw new IllegalStateException("Stack is empty");
         }
-        T data = this.top.getData();
+        char data = this.top.getData();
         this.top = this.top.getNext();
         return data;
     }
 
     // Pop until get C
-    public boolean popContains(T element)
+    public boolean popContains(char element)
     {
         boolean contain = false;
 
         while (!contain && top != null)
         {
-            T popped = pop();
-            if (popped.equals(element))
+            char popped = pop();
+            if (popped == element)
             {
                 contain = true;
             }
@@ -47,7 +47,7 @@ public class Stack<T>
     public int stackHeight()
     {
         int height = 0;
-        Node<T> temp = this.top;
+        Node temp = this.top;
         while (temp != null)
         {
             height++;

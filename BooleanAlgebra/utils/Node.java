@@ -1,10 +1,12 @@
 package utils;
 
-public class Node<T> {
-    private T data;
-    private Node<T> next;
+public class Node
+{
+    private char data;
+    private Node next;
 
-    public Node(T data, Node<T> next) {
+    public Node(char data, Node next)
+    {
         this.data = data;
         this.next = next;
     }
@@ -12,10 +14,10 @@ public class Node<T> {
     public Node() {}
 
     // Getters
-    public T getData() { return this.data; }
-    public Node<T> getNext() { return this.next; }
+    public char getData() {return this.data;}
+    public Node getNext() {return this.next;}
 
     // Setters
-    public void setData(T data) { this.data = data; }
-    public void setNext(Node<T> next) { this.next = next; }
+    public void setData(char data) {this.data = data;}
+    public void setNext(Node next) {this.next = next;}
 }
