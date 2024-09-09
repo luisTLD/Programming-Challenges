@@ -1,22 +1,14 @@
 #include <iostream>
 #include <limits>
 
-#include "utils/Hanoi.hpp"
+#include "Utils/Hanoi.hpp"
+#include "Utils/MyLib/C++/InputUtils.hpp"
 
 int main()
 {
     int tower_height = 0;
-    do 
-    {
-        std::cout << "Enter the height of the tower: ";
-        std::cin >> tower_height;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        if (std::cin.fail()) 
-        {
-            std::cerr << "Please enter an integer" << std::endl;
-            std::cin.clear();
-        }
-    } while (tower_height < 1);
+    std::cout << "Enter the height of the tower: ";
+    tower_height = readInt("Please enter an integer");
 
     try
     {
