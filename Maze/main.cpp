@@ -1,4 +1,6 @@
-#include "Utils/MazeSolver.hpp"
+#include "Interfaces/AllInterfaces.hpp"
+
+// g++ -IInterfaces -o main main.cpp Utils/Point.cpp Utils/Maze.cpp Utils/MazeSolver.cpp Utils/MazeFileHandler.cpp
 
 int main()
 {
