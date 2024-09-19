@@ -2,7 +2,7 @@
 
 ## Overview
 
-A maze solver that uses Breadth-First Search (BFS) to find the shortest path in a grid-based maze.
+This is a maze solver that allows the user to choose between Breadth-First Search (BFS) and Depth-First Search (DFS) to solve a grid-based maze. BFS is used to find the shortest path, while DFS explores the maze in depth-first order.
 - Display the solution path using `+` in the maze grid.
 
 - ## Compilation
@@ -26,7 +26,11 @@ In this exercise, I aim to enhance good practices for code readability and organ
 
 - **Maze Loading:** Load a maze from a text file located in the `Mazes` folder.
 - **Maze Solving:** Uses BFS to find the shortest path in the maze where `0` represents open paths and `1` represents walls.
-- **Solution Saving:** Saves the solved maze to a text file in the `Solutions` folder with the path marked.
+- **Solution Saving:** Saves the solved maze to a text file in the `Solutions` folder with the path marked.  
+  
+- **Breadth-First Search (BFS)**: Finds the shortest path from the start to the end of the maze.
+- **Depth-First Search (DFS)**: Explores all possible paths to find a solution, though it may not always find the shortest path.
+- **User Choice**: At runtime, the user can select whether to solve the maze using BFS or DFS.
 
 ## File Format
 
