@@ -3,6 +3,59 @@
 // Constructor to initialize the MazeSolver with a Maze
 MazeSolver::MazeSolver(const Maze& maze) : maze(maze) {}
 
+// Solves the maze using Depth-First Search (DFS) algorithm.
+bool MazeSolver::solveMazeDFS()
+{
+    // Get the starting point of the maze.
+    Point start = this->maze.getStart();
+
+    // Begin the recursive DFS search from the starting point.
+    bool found = solveMazeDFSRec(start);
+    
+    // If a solution is found, print the maze and prompt the user to save it.
+    if (found)
+    {
+        this->maze.print();
+        char choice;
+        std::cout << "Do you want to save the solution in a file? (y/n): ";
+        std::cin >> choice;
+
+        if (choice == 'y' || choice == 'Y') MazeFileHandler::saveSolutionToFile(this->maze);
+    }
+
+    return found;
+}
+
+// Recursive function for DFS that explores all valid neighboring points of the current position.
+bool MazeSolver::solveMazeDFSRec(Point& current)
+{
+    bool found = false;
+
+    if (current == this->maze.getEnd()) 
+    {
+        return true;
+    }
+
+    // Get all valid neighboring points to explore from the current position.
+    std::vector<Point> to_explore = getValidNeighbors(current);
+
+    for (Point& test : to_explore)
+    {
+        markVisited(test);
+        this->maze[test] = 2; 
+
+        if (solveMazeDFSRec(test))
+        {
+            found = true;
+            break; 
+        }
+
+        this->maze[test] = 0;
+    }
+
+    return found;
+}
+
 // Solves the maze using Breadth-First Search (BFS)
 bool MazeSolver::solveMazeBFS()
 {

@@ -21,6 +21,12 @@ public:
     // Solves the maze using Breadth-First Search (BFS)
     bool solveMazeBFS();
 
+    // Solves the maze using Depth-First Search (DFS) algorithm.
+    bool solveMazeDFS();
+
+    // Recursive helper function for the DFS algorithm.
+    bool solveMazeDFSRec(Point& current);
+
     // Returns valid neighbors of a given position (within bounds and not walls)
     std::vector<Point> getValidNeighbors(const Point& position) const;
 

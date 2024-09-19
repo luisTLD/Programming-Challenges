@@ -68,9 +68,30 @@ int main()
 
     // Create a MazeSolver instance and solve the maze
     MazeSolver solver(maze);
-    if (!solver.solveMazeBFS())
+
+    // Ask the user to choose between DFS or BFS for solving the maze.
+    char method_choice;
+    std::cout << "Choose a method to solve the maze (D for DFS, B for BFS): ";
+    std::cin >> method_choice;
+    
+    // Solve the maze based on the user's choice.
+    if (method_choice == 'D' || method_choice == 'd')
     {
-        std::cout << "Unable to solve the maze" << std::endl;
+        if (!solver.solveMazeDFS())
+        {
+            std::cout << "Unable to solve the maze using DFS" << std::endl;
+        }
+    }
+    else if (method_choice == 'B' || method_choice == 'b')
+    {
+        if (!solver.solveMazeBFS())
+        {
+            std::cout << "Unable to solve the maze using BFS" << std::endl;
+        }
+    }
+    else
+    {
+        std::cout << "Invalid choice. Please choose either D (DFS) or B (BFS)." << std::endl;
     }
 
     return 0;
