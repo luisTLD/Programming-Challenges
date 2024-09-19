@@ -20,8 +20,6 @@ To compile the project, use the following command:
 
 **Note:** The code does not perform input validation or error checking. It assumes that the input files are correctly formatted.
 
-### Notes
-
 In this exercise, I aim to enhance good practices for code readability and organization. The code in the header files (`Interfaces`) includes detailed comments to explain the functions and their usage. This approach helps maintain clarity and ease of understanding throughout the project.
 
 ## Features
