@@ -2,16 +2,27 @@
 
 ## Overview
 
-This project is a maze solver that uses the Breadth-First Search (BFS) algorithm to find the shortest path from the start point to the end point in a maze represented by a grid. The program can read a maze from a text file or be entered line by line via the console. After solving the maze, it saves the solved maze to a new text file.   
-  
-  The entire code is thoroughly commented, making it easy to understand each part of the maze search and solution process.
-The solution path is printed within the maze using the `+` character, indicating the route found from the start to the end point.
+A maze solver that uses Breadth-First Search (BFS) to find the shortest path in a grid-based maze.
+- Display the solution path using `+` in the maze grid.
+
+- ## Compilation
+
+To compile the project, use the following command:
+- g++ -IInterfaces -o main main.cpp Utils/Point.cpp Utils/Maze.cpp Utils/MazeSolver.cpp Utils/MazeFileHandler.cpp
+ 
+### Explanation
+
+- `-IInterfaces`: Specifies the directory for header files. This is necessary for locating the headers included in the `Utils` source files.
+- `-o main`: Sets the name of the output executable.
+- `main.cpp Utils/Point.cpp Utils/Maze.cpp Utils/MazeSolver.cpp Utils/MazeFileHandler.cpp`: Lists the source files to compile and link.
+
+# Important Note  
 
 **Note:** The code does not perform input validation or error checking. It assumes that the input files are correctly formatted.
 
-# Important Note
+### Notes
 
-This code **does not handle any input validation**. Any invalid numbers or out-of-range values will result in an incorrect and disproportionate solution. It is crucial that the input files or console inputs are correctly formatted and within the valid range.
+In this exercise, I aim to enhance good practices for code readability and organization. The code in the header files (`Interfaces`) includes detailed comments to explain the functions and their usage. This approach helps maintain clarity and ease of understanding throughout the project.
 
 ## Features
 
@@ -22,6 +33,8 @@ This code **does not handle any input validation**. Any invalid numbers or out-o
 ## File Format
 
 **Input File (located in `Mazes` folder):**
+
+The input file must be located in the `Mazes` folder. When specifying the file, only include the name of the file without `../` or `.txt`. The code will automatically handle the file extension and path.
 
 The input file must have the following format:
 
