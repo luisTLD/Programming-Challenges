@@ -2,7 +2,8 @@
 
 ## Overview
 
-This project is a maze solver that uses the Breadth-First Search (BFS) algorithm to find the shortest path from the start point to the end point in a maze represented by a grid. The program can read a maze from a text file or be entered line by line via the console. After solving the maze, it saves the solved maze to a new text file. The entire code is thoroughly commented, making it easy to understand each part of the maze search and solution process.
+This project is a maze solver that uses the Breadth-First Search (BFS) algorithm to find the shortest path from the start point to the end point in a maze represented by a grid. The program can read a maze from a text file or be entered line by line via the console. After solving the maze, it saves the solved maze to a new text file.   
+The entire code is thoroughly commented, making it easy to understand each part of the maze search and solution process.
 The solution path is printed within the maze using the `+` character, indicating the route found from the start to the end point.
 
 **Note:** The code does not perform input validation or error checking. It assumes that the input files are correctly formatted.
