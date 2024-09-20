@@ -1,4 +1,4 @@
-# Maze Solver with BFS
+# Maze Solver
 
 ## Overview
 
