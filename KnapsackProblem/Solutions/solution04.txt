@@ -1,0 +1,22 @@
+Knapsack max weight: 15
+
+Items used: 
+Item ID: 1   Item weight: 5   Item value: 10
+Amount: 1    Weight Sum: 5    Value Sum: 10
+
+Item ID: 2   Item weight: 4   Item value: 6
+Amount: 1    Weight Sum: 4    Value Sum: 6
+
+Item ID: 3   Item weight: 3   Item value: 7
+Amount: 1    Weight Sum: 3    Value Sum: 7
+
+Item ID: 4   Item weight: 2   Item value: 4
+Amount: 1    Weight Sum: 2    Value Sum: 4
+
+Item ID: 5   Item weight: 1   Item value: 1
+Amount: 1    Weight Sum: 1    Value Sum: 1
+
+Knapsack:
+Total Items:  5
+Total weight: 15
+Total value:  28
