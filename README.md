@@ -1,6 +1,6 @@
-# Logic Challenges
+# Programming Challenges
 
-This repository contains various solutions to logic problems and challenges. It serves as a collection of code exploring different problem-solving techniques and algorithms
+This repository contains solutions to various algorithmic challenges and coding problems implemented in C++.
 
 ## Contents
 
