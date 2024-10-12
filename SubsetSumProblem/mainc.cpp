@@ -11,8 +11,6 @@ int main()
     // Read the number of elements
     std::cout << "Enter the number of elements: ";
     std::cin >> n;
-
-    // Verifica se n é válido
     if (n <= 0)
     {
         std::cout << "Invalid number of elements." << std::endl;
