@@ -72,7 +72,6 @@ unsigned long long exponentiationBySquaring(unsigned long long base, int exponen
         if (exponent % 2 == 1)
         {
             result *= base;
-            exponent -= 1;
         }
 
         base *= base;
